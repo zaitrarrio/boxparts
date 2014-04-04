@@ -62,7 +62,7 @@ module Autoparts
       end
 
       def post_uninstall
-        execute 'rm', user_opam_home
+        user_opam_home.unlink if user_opam_home.symlink?
       end
       
       def tips
