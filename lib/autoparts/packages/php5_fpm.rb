@@ -5,7 +5,7 @@ module Autoparts
   module Packages
     class Php5Fpm < Package
       name 'php5-fpm'
-      version '5.5.10-1'
+      version '5.5.10-2'
       description 'PHP5-FPM: an alternative PHP FastCGI implementation with some additional features (mostly) useful for heavy-loaded sites.'
       source_url 'http://ru2.php.net/get/php-5.5.10.tar.gz/from/this/mirror'
       source_sha1 'fa13e3634373791a8cb427d43ab4dcf9fcb3e526'
@@ -23,7 +23,7 @@ module Autoparts
             "--prefix=#{prefix_path}",
             "--bindir=#{bin_path}",
             "--sbindir=#{bin_path}",
-            "--with-config-file-path=#{php5_ini_path}",
+            "--with-config-file-path=#{Path.etc + 'php5'}",
             "--with-config-file-scan-dir=#{php5_ini_path_additional}",
             "--sysconfdir=#{Path.etc + 'php5/fpm'}",
             "--localstatedir=#{Path.var + name}",

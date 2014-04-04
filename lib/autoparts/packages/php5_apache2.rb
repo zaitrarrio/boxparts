@@ -5,7 +5,7 @@ module Autoparts
   module Packages
     class Php5Apache2 < Package
       name 'php5-apache2'
-      version '5.5.10'
+      version '5.5.10-2'
       description 'Php5 Apache: a php5 module for apache2.'
       source_url 'http://us1.php.net/get/php-5.5.10.tar.gz/from/this/mirror'
       source_sha1 'fa13e3634373791a8cb427d43ab4dcf9fcb3e526'
@@ -26,7 +26,7 @@ module Autoparts
             "--prefix=#{prefix_path}",
             "--bindir=#{bin_path}",
             "--sbindir=#{bin_path}",
-            "--with-config-file-path=#{php5_ini_path}",
+            "--with-config-file-path=#{Path.etc + 'php5'}",
             "--with-config-file-scan-dir=#{php5_ini_path_additional}",
             "--sysconfdir=#{Path.etc + name}",
             "--libdir=#{lib_path}",
