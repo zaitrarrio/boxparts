@@ -27,6 +27,25 @@ See `parts help`.
 * Log files should be placed in `Path.var + 'log' + "#{name}.log"` (e.g.
   `~/.parts/var/log/postgresql.log`).
 
+
+### Develop and Test packages 
+
+To test your boxparts packages in the Codio:
+
+* Clone the repo on github 
+* Create a project by cloning the repo you clonned
+* Do:
+
+  ```
+  mv /home/codio/.parts/autoparts /home/codio/.parts/autoparts.orig
+  ln -s /home/codio/workspace /home/codio/.parts/autoparts
+  ```
+Now the ```parts``` command will be related to your sources. You can add new packages to 
+```lib/autoparts/packages``` and install them by ```parts install your_package_name```
+
+Send us a PR as a package will be ready and we will upload a binary to the repo. 
+
+
 - - -
 Copyright (c) 2013-2014 Application Craft Ltd. http://codio.com
 This software is licensed under the [BSD 2-Clause license](https://raw.github.com/codio/boxparts/master/LICENSE).
