@@ -1,11 +1,12 @@
 # Copyright (c) 2013-2014 Irrational Industries Inc. d.b.a. Nitrous.IO
 # This software is licensed under the [BSD 2-Clause license](https://raw.github.com/nitrous-io/autoparts/master/LICENSE).
 
+# All python packages should be rebuild on version change.
 module Autoparts
   module Packages
     class Python2 < Package
       name 'python2'
-      version '2.7.6-1'
+      version '2.7.6-2'
       description 'Python 2: The most friendly Programming Language'
       source_url 'http://www.python.org/ftp/python/2.7.6/Python-2.7.6.tgz'
       source_sha1 '8328d9f1d55574a287df384f4931a3942f03da64'
