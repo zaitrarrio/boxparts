@@ -5,7 +5,7 @@ module Autoparts
   module Packages
     class Pip < Package
       name 'pip'
-      version '1.5.4'
+      version '1.5.4-1'
       description 'Pip: A tool for installing and managing Python packages'
       source_url 'https://pypi.python.org/packages/source/p/pip/pip-1.5.4.tar.gz'
       source_sha1 '35ccb7430356186cf253615b70f8ee580610f734'

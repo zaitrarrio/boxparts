@@ -5,7 +5,7 @@ module Autoparts
   module Packages
     class Setuptools < Package
       name 'setuptools'
-      version '2.2'
+      version '2.2-1'
       description 'Setuptools: Easily download, build, install, upgrade, and uninstall Python packages'
       source_url 'https://pypi.python.org/packages/source/s/setuptools/setuptools-2.2.tar.gz'
       source_sha1 '547eff11ea46613e8a9ba5b12a89c1010ecc4e51'
