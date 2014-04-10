@@ -9,7 +9,7 @@ module Autoparts
     class Python3 < Python2
       name 'python3'
       version '3.3.4-2'
-      description 'Python 3: <Ne>мшкегфд</Ne>xt generation of the most friendly Programming Language'
+      description 'Python 3: Next generation of the most friendly Programming Language'
       source_url 'http://www.python.org/ftp/python/3.3.4/Python-3.3.4.tgz'
       source_sha1 '0561d2a24067c03ed2b29c58a12e126e86ccdc58'
       source_filetype 'tgz'
@@ -20,6 +20,7 @@ module Autoparts
       end
       
       def common_version
+        
         "3.3"
       end
     end
