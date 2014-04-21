@@ -13,7 +13,8 @@ module Autoparts
         'C_INCLUDE_PATH'             => '$AUTOPARTS_ROOT/include',
         'CPLUS_INCLUDE_PATH'         => '$AUTOPARTS_ROOT/include',
         'OBJC_INCLUDE_PATH'          => '$AUTOPARTS_ROOT/include',
-        'MAN_PATH'                   => '$AUTOPARTS_ROOT/share/man:/usr/local/share/man:/usr/share/man:$MAN_PATH'
+        'MAN_PATH'                   => '$AUTOPARTS_ROOT/share/man:/usr/local/share/man:/usr/share/man:$MAN_PATH',
+        'PKG_CONFIG_PATH'            => '$AUTOPARTS_ROOT/lib/pkgconfig:$PKG_CONFIG_PATH'
       }.freeze
 
       def initialize(args, options)
