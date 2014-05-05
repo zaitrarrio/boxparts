@@ -46,7 +46,7 @@ module Autoparts
 
       def env_content
         <<-EOS.unindent
-          export PATH="$HOME/.cabal/bin"
+          export PATH="$HOME/.cabal/bin:$PATH"
         EOS
       end
     end
