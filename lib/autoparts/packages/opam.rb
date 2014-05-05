@@ -64,7 +64,6 @@ module Autoparts
 
       def post_uninstall
         user_opam_home.unlink if user_opam_home.symlink?
-        env_file.unlink if env_file.exist
       end
       
       def tips

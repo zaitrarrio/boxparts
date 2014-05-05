@@ -7,7 +7,7 @@ module Autoparts
       category Category::LIBRARIES
 
       depends_on "boost"
-      depends_on 're2cac'
+      depends_on 're2c'
       source_url 'http://cznic.dl.sourceforge.net/project/potassco/aspcud/1.9.0/aspcud-1.9.0-source.tar.gz'
       source_sha1 'ae77772c2424620b3064d0dfe795c26b1c8aa778'
       source_filetype 'tar.gz'
