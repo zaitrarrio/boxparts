@@ -3,7 +3,7 @@ module Autoparts
     class Opam < Package
       name 'opam'
       version '1.1.1-20140502'
-      description 'OPAM: a source-based package manager for OCaml.'
+      description 'OPAM: a source-based package manager for OCaml. With "Real World OCaml" packages preinstalled.'
       source_url 'https://github.com/ocaml/opam/releases/download/1.1.1/opam-full-1.1.1.tar.gz'
       source_sha1 '3d6427679945a0724c8abc15aef9c6a9c1168e42'
       source_filetype 'tar.gz'
