@@ -2,18 +2,17 @@ module Autoparts
   module Packages
     class Opam < Package
       name 'opam'
-      version '1.1.1-1'
+      version '1.1.1-20140502'
       description 'OPAM: a source-based package manager for OCaml.'
-      source_url 'https://github.com/ocaml/opam/archive/1.1.1.tar.gz'
-      source_sha1 'f1a8291eb888bfae4476ee59984c9a30106cd483'
+      source_url 'https://github.com/ocaml/opam/releases/download/1.1.1/opam-full-1.1.1.tar.gz'
+      source_sha1 '3d6427679945a0724c8abc15aef9c6a9c1168e42'
       source_filetype 'tar.gz'
       category Category::DEVELOPMENT_TOOLS
 
       depends_on 'ocaml'
       depends_on 'aspcud'
-      
       def compile
-        Dir.chdir(extracted_archive_path + 'opam-1.1.1') do
+        Dir.chdir(extracted_archive_path + 'opam-full-1.1.1') do
 
           args = [
             "--prefix=#{prefix_path}",
@@ -26,7 +25,7 @@ module Autoparts
       def install
         FileUtils.mkdir_p(real_opam_home)
         execute 'ln', '-s', real_opam_home, user_opam_home
-        Dir.chdir(extracted_archive_path + 'opam-1.1.1') do
+        Dir.chdir(extracted_archive_path + 'opam-full-1.1.1') do
           system 'make install'
         end
         ENV['MAKEFLAGS'] = '-j1'
@@ -64,6 +63,7 @@ module Autoparts
 
       def post_uninstall
         user_opam_home.unlink if user_opam_home.symlink?
+        env_file.unlink if env_file.exist?
       end
       
       def tips
