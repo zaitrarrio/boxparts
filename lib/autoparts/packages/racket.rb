@@ -3,7 +3,7 @@ module Autoparts
     class Racket < Package
       name 'racket'
       version '6.0'
-      description ''
+      description 'Racket: a full-spectrum programming language. It goes beyond Lisp and Scheme with dialects that support objects, types, laziness, and more.'
       category Category::PROGRAMMING_LANGUAGES
 
       source_url 'http://mirror.racket-lang.org/installers/6.0/racket-6.0-src-unix.tgz'
