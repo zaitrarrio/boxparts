@@ -14,13 +14,12 @@ module Autoparts
         args = [
           "--prefix=#{prefix_path}",
         ]
-        
+
         Dir.chdir(name_with_version) do
           execute './configure', *args
           execute 'make'
         end
       end
-
 
       def install
         Dir.chdir(name_with_version) do
