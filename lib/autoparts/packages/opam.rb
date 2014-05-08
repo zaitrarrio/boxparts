@@ -10,7 +10,7 @@ module Autoparts
       category Category::DEVELOPMENT_TOOLS
 
       depends_on 'ocaml'
-      depends_on 'aspcud'
+#      depends_on 'aspcud'
       def compile
         Dir.chdir(extracted_archive_path + 'opam-full-1.1.1') do
 
