@@ -19,7 +19,9 @@ module Autoparts
               end
             end
           end
-          Autoparts::Package.start_all
+# disable autostart because it requires console login
+# Codio is using startup.sh for all
+#          Autoparts::Package.start_all
           Env.print_exports
           Env.print_extra
         else
