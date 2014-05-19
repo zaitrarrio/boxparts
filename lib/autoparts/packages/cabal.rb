@@ -19,8 +19,6 @@ module Autoparts
         end
       end
 
-
-
       def tips
         <<-EOS.unindent
           Run "cabal update" after installing
@@ -28,7 +26,7 @@ module Autoparts
 
          Close and open terminal to have go-lang working after the install.
          or reload shell with
-         . ./bash_profile
+         . ~/.bash_profile
         EOS
       end
 
