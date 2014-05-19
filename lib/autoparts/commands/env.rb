@@ -7,8 +7,8 @@ module Autoparts
       EXPORTS = {
         'AUTOPARTS_ROOT'             => Path.root,
         'PATH'                       => '$AUTOPARTS_ROOT/bin:$AUTOPARTS_ROOT/sbin:$PATH',
-        'LD_LIBRARY_PATH'            => '$AUTOPARTS_ROOT/lib:/usr/local/lib:/usr/lib:$LD_LIBRARY_PATH',
-        'LIBRARY_PATH'               => '$AUTOPARTS_ROOT/lib:/usr/local/lib:/usr/lib:$LIBRARY_PATH',
+        'LD_LIBRARY_PATH'            => '$AUTOPARTS_ROOT/lib:$LD_LIBRARY_PATH',
+        'LIBRARY_PATH'               => '$AUTOPARTS_ROOT/lib:$LIBRARY_PATH',
         'DYLD_FALLBACK_LIBRARY_PATH' => '$AUTOPARTS_ROOT/lib',
         'C_INCLUDE_PATH'             => '$AUTOPARTS_ROOT/include',
         'CPLUS_INCLUDE_PATH'         => '$AUTOPARTS_ROOT/include',

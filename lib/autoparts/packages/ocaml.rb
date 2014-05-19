@@ -25,7 +25,7 @@ module Autoparts
 
       def install
         Dir.chdir(extracted_archive_path + name_with_version) do
-          system 'make', "PREFIX=#{prefix_path}", 'install'
+          execute 'make', "PREFIX=#{prefix_path}", 'install'
         end
       end
     end
