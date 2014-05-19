@@ -9,7 +9,10 @@ This page contains a list of recent updates made to the Codio BoxParts. For a fu
     - opam updated to 1.1.1-20140519.
     
 - **Additions**:
+    - clasp
+    - gmp
     - gringo
+    - scons
     
 ####May 5th 2014
 - **Improvements**: 
