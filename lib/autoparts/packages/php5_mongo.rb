@@ -8,10 +8,10 @@ module Autoparts
       name 'php5-mongo'
       category Category::WEB_DEVELOPMENT
 
-      version '1.4.5-2'
+      version '1.5.3'
       description 'Mongo driver for php5'
-      source_url 'http://pecl.php.net/get/mongo-1.4.5.tgz'
-      source_sha1 'd9608822a3267f24748e9bdef5850e112f0ef54a'
+      source_url 'http://pecl.php.net/get/mongo-1.5.3.tgz'
+      source_sha1 '6515519d82aee17c1a2ebcb7005c7d6400893d5a'
       source_filetype 'tgz'
 
       depends_on 'php5'
@@ -21,7 +21,7 @@ module Autoparts
       end
 
       def php_extension_dir
-        "mongo-1.4.5"
+        "mongo-1.5.3"
       end
 
     end
