@@ -5,16 +5,16 @@ module Autoparts
   module Packages
     class PostgreSQL < Package
       name 'postgresql'
-      version '9.2.4'
+      version '9.3.4'
       description "PostgreSQL: The world's most advanced open-source database system"
       category Category::DATA_STORES
 
-      source_url 'http://ftp.postgresql.org/pub/source/v9.2.4/postgresql-9.2.4.tar.gz'
-      source_sha1 'bb248bd2043caf47f2b43c874bf11d775f99e991'
+      source_url 'http://ftp.postgresql.org/pub/source/v9.3.4/postgresql-9.3.4.tar.gz'
+      source_sha1 '9f80b3cfebc434ca0860fc8489923cea73456081'
       source_filetype 'tar.gz'
 
       def compile
-        Dir.chdir('postgresql-9.2.4') do
+        Dir.chdir('postgresql-9.3.4') do
           args = [
             '--disable-debug',
             "--prefix=#{prefix_path}",
@@ -40,7 +40,7 @@ module Autoparts
       end
 
       def install
-        Dir.chdir('postgresql-9.2.4') do
+        Dir.chdir('postgresql-9.3.4') do
           execute 'make install-world'
         end
       end
