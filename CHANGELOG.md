@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###June 13th, 2014
+- **Improvements**:
+    - postgresql updated to 9.3.4
+    
 ###June 11th, 2014
 - **Additions**:
     - jruby
