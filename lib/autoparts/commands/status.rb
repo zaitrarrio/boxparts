@@ -1,6 +1,8 @@
 # Copyright (c) 2013-2014 Irrational Industries Inc. d.b.a. Nitrous.IO
 # This software is licensed under the [BSD 2-Clause license](https://raw.github.com/nitrous-io/autoparts/master/LICENSE).
 
+require 'json'
+
 module Autoparts
   module Commands
     class Status
@@ -12,16 +14,26 @@ module Autoparts
             unless Package.installed? package_name
               raise PackageNotInstalledError.new package_name
             end
-            package = Package.factory(package_name)
+            begin
+              package = Package.factory(package_name)
+            rescue PackageNotFoundError => e
+            end
             if package.respond_to? :running?
-              list[package_name] = package.running?
+              list[package_name] = package.running? ? 'running' : 'stopped'
             end
           end
-          unless list.empty?
+
+          # json mode outputs the list as a JSON formatted output.
+          if options.include?('--json')
+            puts JSON.generate list.map { |n, s| { name: n, status: s } }
+          else
+            return if list.empty?
+
             ljust_length = list.keys.map(&:length).max + 1
-            list.each_pair do |name, running|
+
+            list.each_pair do |name, status|
               print name.ljust(ljust_length)
-              print running ? 'RUNNING' : 'STOPPED'
+              print status.upcase
               puts
             end
           end

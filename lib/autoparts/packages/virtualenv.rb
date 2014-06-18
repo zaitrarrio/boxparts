@@ -14,7 +14,7 @@ module Autoparts
       category Category::DEVELOPMENT_TOOLS
 
       depends_on "python2"
-      depends_on "setuptools"
+
       def compile
         Dir.chdir("virtualenv-1.11.4") do
           args = [
