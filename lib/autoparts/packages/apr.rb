@@ -9,7 +9,7 @@ module Autoparts
       description 'Apache Portable Runtime: Software libraries that provide a predictable and consistent interface to underlying platform-specific implementations'
       category Category::LIBRARIES
 
-      source_url 'http://mirrors.gigenet.com/apache//apr/apr-1.5.1.tar.gz'
+      source_url 'http://mirrors.gigenet.com/apache/apr/apr-1.5.1.tar.gz'
       source_sha1 '9caa83e3f50f3abc9fab7c4a3f2739a12b14c3a3'
       source_filetype 'tar.gz'
 
