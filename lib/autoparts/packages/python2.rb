@@ -13,17 +13,25 @@ module Autoparts
       source_filetype 'tgz'
       category Category::PROGRAMMING_LANGUAGES
 
+      #depends_on 'sqlite3'
+      
       def compile
         Dir.chdir(python_version) do
           args = [
             "--prefix=#{prefix_path}",
-            "--enable-shared",            
+            "--enable-shared",
+            "--enable-loadable-sqlite-extensions"
           ]
+          pre_compile
           execute "./configure", *args
           execute "make"
         end
       end
-
+      
+      def pre_compile
+				execute 'sed', '-i', "1096 c\\        sqlite_inc_paths = [ '/usr/include', '#{Path.include}', ", 'setup.py'
+      end
+      
       def install
         Dir.chdir(python_version) do
           execute "make install"
@@ -42,6 +50,13 @@ module Autoparts
       
       def common_version
         "2.7"
+      end
+
+      # we want to cleanup site-packages to make sure that we dont include any
+      # wrong packages
+      def pre_archive
+        FileUtils.rm_rf site_packages
+        site_packages
       end
     end
   end

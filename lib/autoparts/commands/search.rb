@@ -2,6 +2,7 @@
 # This software is licensed under the [BSD 2-Clause license](https://raw.github.com/nitrous-io/autoparts/master/LICENSE).
 
 require "autoparts/string"
+require 'json'
 
 module Autoparts
   module Commands
@@ -13,6 +14,7 @@ module Autoparts
           end
         rescue LoadError
         end
+
         packages = Package.packages
         if args.length > 0
           searchString = args[0].downcase
@@ -21,26 +23,40 @@ module Autoparts
             (name.downcase.include?(searchString) || package.description.downcase.include?(searchString))
           end
         end
+
         if packages.length > 0
           list = {}
           packages.each_pair do |name, package_class|
             package = package_class.new
-            list["#{name}".bold.magenta + " (#{package.version})".green] = package.description
+            list["#{name} + #{package.version}"] = { 
+              name: name,
+              version: package.version,
+              category: package.category,
+              description: package.description 
+            }
           end
-          unless list.empty?
-            colors_length = ''.bold.magenta.green.length
-            ljust_length = list.keys.map(&:length).max + 1
-            columns = `tput cols`.to_i
-            format = "%-#{ljust_length}s %s\n"
-            list.sort.map do |name, description|
-              if (description.length + ljust_length < columns)
-                printf format, name, description
-              else
-                descriptions = split_description description, columns - ljust_length + colors_length - 4
-                descriptions.each do |val|
-                  printf format, name, val
-                  name = ' '.bold.magenta.green
-                end
+
+          colors_length = ''.bold.magenta.green.length
+          # json mode outputs the list as a JSON formatted output.
+          if options.include?('--json')
+            puts JSON.generate list.values
+          else
+            return if list.empty?
+          end
+          
+          ljust_length = list.keys.map(&:length).max + ' '.bold.magenta.green.length
+          format = "%-#{ljust_length}s %s\n"
+          columns = `tput cols`.to_i
+          list.sort.map do |packag_name, package|
+            name = "#{package[:name]}".bold.magenta + " (#{package[:version]})".green
+            description = package[:description];
+            if (description.length + ljust_length < columns)
+            	printf format, name, description
+            else
+            	descriptions = split_description description, columns - ljust_length + colors_length - 4
+            	descriptions.each do |val|
+            		printf format, name, val
+                name = ' '.bold.magenta.green
               end
             end
           end

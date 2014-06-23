@@ -9,6 +9,8 @@ module Autoparts
     class Init
       def initialize(args, options)
         if options.first == '-'
+          # NOTE: a common usage of parts init is `eval $(parts init -)`.
+          # Ensure that everything run below does not have stray output
           no_autoupdate_env = ENV['AUTOPARTS_NO_AUTOUPDATE']
           if autoupdate_due? && !(no_autoupdate_env && ['1', 'true'].include?(no_autoupdate_env.downcase))
             if Update.update(true)
@@ -17,13 +19,17 @@ module Autoparts
                   'last_update' => Time.now.to_i
                 })
               end
+              # rerun in case the code changes from underneath us break anything
+              if File.basename($0) == 'parts' && File.executable?($0)
+                exec({'AUTOPARTS_NO_AUTOUPDATE' => '1'}, "#{$0} init #{(options + args).join(' ')}")
+              end
             end
           end
-# disable autostart because it requires console login
-# Codio is using startup.sh for all
-#          Autoparts::Package.start_all
+
           Env.print_exports
           Env.print_extra
+        elsif options.include? '--start'
+          Autoparts::Package.start_all
         else
           show_help
         end
@@ -42,7 +48,7 @@ module Autoparts
           # Load environment variables for Autoparts automatically by
           # adding the following to #{profile}
 
-          eval "$(parts init -)"
+          eval "$(parts env)"
         STR
       end
 
