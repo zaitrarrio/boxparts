@@ -18,6 +18,10 @@ module Autoparts
       def common_version
         "3.4"
       end
+      
+     def python_version
+        "Python-3.4.1"
+      end      
     end
   end
 end

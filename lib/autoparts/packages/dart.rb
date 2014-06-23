@@ -11,7 +11,7 @@ module Autoparts
 
       def install
         prefix_path.mkpath
-        Dir.chdir(extracted_archive_path + 'dart' + 'dart-sdk') do
+        Dir.chdir(extracted_archive_path + 'dart-sdk') do
           execute 'cp', '-r', '.', prefix_path
         end
       end

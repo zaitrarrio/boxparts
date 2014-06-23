@@ -17,6 +17,8 @@ module Autoparts
 
       source_filetype 'tar.gz'
 
+      depends_on 'zip'
+      
       def compile
         Dir.chdir('js-1.8.5/js/src') do
           args = [
