@@ -53,7 +53,7 @@ module Autoparts
       def required_files
         [
           "easy-install.pth",
-          "setuptools-#{version}-py2.7.egg",
+          "setuptools-2.2-py2.7.egg",
           "setuptools.pth",
         ]
       end

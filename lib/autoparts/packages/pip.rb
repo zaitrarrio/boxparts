@@ -54,7 +54,7 @@ module Autoparts
       def required_files
         [
           "easy-install.pth",
-          "pip-#{version}-py2.7.egg",
+          "pip-1.5.4-py2.7.egg",
         ]
       end
     end

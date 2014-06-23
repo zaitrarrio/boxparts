@@ -19,6 +19,10 @@ module Autoparts
         "3.4"
       end
       
+      def pre_compile
+				execute 'sed', '-i', "1047 c\\        sqlite_inc_paths = [ '/usr/include', '#{Path.include}', ", 'setup.py'
+      end
+      
      def python_version
         "Python-3.4.1"
       end      
