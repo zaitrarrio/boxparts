@@ -6,7 +6,7 @@ module Autoparts
     class Freetype < Package
       name 'freetype'
       version '2.5.3'
-      description 'Feetype: a freely available software library to render fonts.'
+      description 'Freetype: a freely available software library to render fonts.'
       category Category::LIBRARIES
 
       source_url 'http://download.savannah.gnu.org/releases/freetype/freetype-2.5.3.tar.gz'
