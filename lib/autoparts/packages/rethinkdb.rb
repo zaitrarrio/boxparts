@@ -40,7 +40,7 @@ module Autoparts
         execute 'sed', '-i', "s|# pid-file=/var/run/rethinkdb/rethinkdb.pid|pid-file=#{run_dir + 'default.pid'}|g", default_conf
         execute 'sed', '-i', "s|# directory=/var/lib/rethinkdb/default|directory=#{lib_dir + 'default'}|g", default_conf
         execute 'sed', '-i', "s|# log-file=/var/log/rethinkdb|log-file=#{log_dir + 'default.log'}|g", default_conf
-        execute 'sed', '-i', "s|# runuser=rethinkdb|run=#{user}|g", default_conf
+        execute 'sed', '-i', "s|# runuser=rethinkdb|runuser=#{user}|g", default_conf
         execute 'sed', '-i', "s|# rungroup=rethinkdb|rungroup=#{user}|g", default_conf
       end
 
