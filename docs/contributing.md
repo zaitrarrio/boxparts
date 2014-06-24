@@ -1,19 +1,19 @@
-# Contributing to Autoparts
+# Contributing to Box Parts
 
 ### Getting Started
 
-Before building a new part ensure you have updated the repo. Run `parts update` within your Nitrous box in order to do this.
+Before building a new part ensure you have updated the repo. Run `parts update` within your Codio box in order to do this.
 
 ### Package Guidelines
 
-Autoparts packages are located in `lib/autoparts/packages`. Please follow the [Ruby Styleguide](https://github.com/styleguide/ruby) when building a part.
+Box Parts packages are located in `lib/autoparts/packages`. Please follow the [Ruby Styleguide](https://github.com/styleguide/ruby) when building a part.
 
 In order to create a new package you will need to provide the following information when creating a pull request:
 
 * Package Name
 * Version
 * Description
-* Category (A list of categories can be found within [lib/autoparts/category.rb](https://github.com/nitrous-io/autoparts/blob/master/lib/autoparts/category.rb))
+* Category (A list of categories can be found within [lib/autoparts/category.rb](https://github.com/codio/boxparts/blob/master/lib/autoparts/category.rb))
 * Source URL (official release source which package will always be located at)
 * Source filetype (the extension of the source file)
 * SHA-1 hash of the source package (You can run `sha1sum` against the source file or [generate](http://hash.online-convert.com/sha1-generator) a SHA-1 hash with the source file)
@@ -30,14 +30,14 @@ There are a few requirements if the part requires additional configuration:
 
 ### Contributing a New Part
 
-Take a look at [docs/example-part.rb](https://github.com/nitrous-io/autoparts/tree/master/docs/example-part.rb) for details on how a package is built.
+Take a look at [docs/example-part.rb](https://github.com/codio/boxparts/tree/master/docs/example-part.rb) for details on how a package is built.
 
-Follow this workflow to contribute an Autoparts package:
+Follow this workflow to contribute an Box Parts package:
 
-1. Fork the [Autoparts repo](https://github.com/nitrous-io/autoparts) in GitHub.
+1. Fork the [Box Parts repo](https://github.com/codio/boxparts) in GitHub.
 2. Create a new box in Nitrous.IO.
 3. cd to `~/.parts/autoparts`
-4. Add the fork repo as a a git remote: `git remote add myfork git@github.com:YOUR-USERNAME/autoparts.git`
+4. Add the fork repo as a a git remote: `git remote add myfork git@github.com:YOUR-USERNAME/boxparts.git`
 5. Create the new package file in `~/.parts/autoparts/lib/autoparts/packages/mypackage.rb`
 6. Open a new console tab and check if the package works as expected.
   * parts search (see if the new package you created is listed)
