@@ -1,3 +1,6 @@
+.codio
+startup.sh
+.ungitrc
 tmp/
 *.gem
 *.rbc

@@ -3,6 +3,14 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###June 26th, 2014
+- **Additions**: 
+	  - rust-nightly  (thanks @adamreid)
+    - snappy
+    - spidermonkey
+- **Improvement**:
+    - rust updated to 0.10 (thanks @adamreid)
+
 ###June 23rd, 2014
 - **Additions**:
 	  - couchdb
