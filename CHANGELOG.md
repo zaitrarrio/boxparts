@@ -5,51 +5,51 @@ This page contains a list of recent updates made to the Codio BoxParts. For a fu
 
 ###June 26th, 2014
 - **Additions**: 
-	  - rust-nightly  (thanks @adamreid)
-    - snappy
-    - spidermonkey
+  - rust-nightly  (thanks @adamreid)
+  - snappy
+  - spidermonkey
 - **Improvement**:
-    - rust updated to 0.10 (thanks @adamreid)
+  - rust updated to 0.10 (thanks @adamreid)
 
 ###June 23rd, 2014
 - **Additions**:
-	  - couchdb
-    - ctags
-    - elasticbeanstalk
-    - elixir
-    - erlang16
-    - freetype
-    - googleappenginego
-    - googleappenginejava
-    - googlecloudsdk
-    - influxdb
-    - jython
-    - leveldb
-    - libmad
-    - protobuf
-    - pypy
-    - rethinkdb
-    - sbt
-    - zeromq
-    - zip
+  - couchdb
+  - ctags
+  - elasticbeanstalk
+  - elixir
+  - erlang16
+  - freetype
+  - googleappenginego
+  - googleappenginejava
+  - googlecloudsdk
+  - influxdb
+  - jython
+  - leveldb
+  - libmad
+  - protobuf
+  - pypy
+  - rethinkdb
+  - sbt
+  - zeromq
+  - zip
 - **Improvement**:
-	  - ant updated to 1.9.4
-    - apache2 updated to 2.4.9
-    - apr updated to 1.5.1
-    - composer udpated to 1.0.0-20140623
-    - dart updated to 1.4.3
-    - erlang updated to 17.0
-    - googleappengine updated to 1.9.5
-    - meteor updated to 0.8.1
-    - phantomjs updated to 1.9.7
-    - php5-gd updated to 5.5.10-2
-    - phpunit updated to 4.0.14
-    - python3 updated to 3.4.1
-    - tomcat updated to 7.0.54
+  - ant updated to 1.9.4
+  - apache2 updated to 2.4.9
+  - apr updated to 1.5.1
+  - composer udpated to 1.0.0-20140623
+  - dart updated to 1.4.3
+  - erlang updated to 17.0
+  - googleappengine updated to 1.9.5
+  - meteor updated to 0.8.1
+  - phantomjs updated to 1.9.7
+  - php5-gd updated to 5.5.10-2
+  - phpunit updated to 4.0.14
+  - python3 updated to 3.4.1
+  - tomcat updated to 7.0.54
     
 ###June 13th, 2014
 - **Improvements**:
-    - postgresql updated to 9.3.4
+	- postgresql updated to 9.3.4
     
 ###June 11th, 2014
 - **Additions**:
