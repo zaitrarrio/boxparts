@@ -3,9 +3,9 @@
 
 module Autoparts
   module Packages
-    class Rust < Package
+    class RustNightly < Package
       name 'rust-nightly'
-      version '0.11.0-pre-nightly-05ca9f7_2014-06-24'
+      version '0.11.0-05ca9f7_2014-06-24'
       description 'Rust: A safe, concurrent, practical language'
       category Category::PROGRAMMING_LANGUAGES
 
@@ -18,7 +18,6 @@ module Autoparts
           execute './install.sh', "--prefix=#{prefix_path}"
         end
       end
-
     end
   end
 end
