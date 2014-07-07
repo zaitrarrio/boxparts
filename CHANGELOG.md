@@ -5,7 +5,7 @@ This page contains a list of recent updates made to the Codio BoxParts. For a fu
 
 ###July 5th, 2014
 - **Additions**: 
-  - tree
+  - tree (thanks @juanpabloaj)
 - **Improvement**:
   - rust updated to 0.11 (thanks @adamreid)
 
