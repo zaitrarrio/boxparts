@@ -3,6 +3,12 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###July 5th, 2014
+- **Additions**: 
+  - tree
+- **Improvement**:
+  - rust updated to 0.11 (thanks @adamreid)
+
 ###June 26th, 2014
 - **Additions**: 
   - rust-nightly  (thanks @adamreid)
