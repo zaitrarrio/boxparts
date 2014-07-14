@@ -2,7 +2,14 @@ Changelog:
 
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
-
+###July 14th, 2014
+- **Additions**: 
+  - enchant
+  - php5-apcu
+  - php5-enchant
+- **Improvement**:
+  - go updated to 1.3
+  
 ###July 5th, 2014
 - **Additions**: 
   - tree (thanks @juanpabloaj)
