@@ -2,10 +2,10 @@ module Autoparts
   module Packages
     class GoLang < Package
       name 'go-lang'
-      version '1.2'
+      version '1.3'
       description 'Go: an open source programming language that makes it easy to build simple, reliable, and efficient software.'
-      source_url 'https://go.googlecode.com/files/go1.2.linux-amd64.tar.gz'
-      source_sha1 '664e5025eae91412a96a10f4ed1a8af6f0f32b7d'
+      source_url 'http://golang.org/dl/go1.3.linux-amd64.tar.gz'
+      source_sha1 'b6b154933039987056ac307e20c25fa508a06ba6'
       source_filetype 'tar.gz'
       category Category::PROGRAMMING_LANGUAGES
 
@@ -46,7 +46,7 @@ module Autoparts
 
          Close and open terminal to have go-lang working after the install.
          or reload shell with
-         . ./bash_profile
+         . ~/.bash_profile
         EOS
       end
     end
