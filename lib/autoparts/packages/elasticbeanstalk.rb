@@ -5,7 +5,7 @@ module Autoparts
   module Packages
     class Elasticbeanstalk < Package
       name 'elasticbeanstalk'
-      version '2.6.2'
+      version '2.6.2-1'
       description "Elastic Beanstalk Command Line Tool: A command line client for interacting with the AWS Elastic Beanstalk APIs"
       category Category::UTILITIES
 
@@ -18,12 +18,13 @@ module Autoparts
       def install
         prefix_path.parent.mkpath
         FileUtils.rm_rf prefix_path
-        execute 'mv', extracted_archive_path + 'AWS-ElasticBeanstalk-CLI-2.6.2/eb/linux/python2.7', prefix_path
+        bin_path.mkpath
+        execute 'mv', extracted_archive_path + 'AWS-ElasticBeanstalk-CLI-2.6.2/', prefix_path
+        execute 'ln', '-s', prefix_path + 'eb/linux/python2.7/eb', bin_path
       end
 
-      def symlink_all
-        symlink_recursively(prefix_path, Path.bin, only_executables: true)
-      end
+      
+
     end
   end
 end
