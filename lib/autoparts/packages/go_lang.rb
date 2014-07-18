@@ -22,12 +22,13 @@ module Autoparts
         Path.env + 'go-lang'
       end
 
-      def env_content
-        <<-EOS.unindent
-          export GOROOT=#{prefix_path}
-          export GOPATH=#{go_packages}
-          export PATH=$PATH:$GOPATH/bin
-        EOS
+      def required_env
+        env_file.unlink if env_file.exist?
+        [
+          "export GOROOT=#{prefix_path}",
+          "export GOPATH=#{go_packages}",
+          "export PATH=$PATH:$GOPATH/bin",
+        ]
       end
 
       def go_packages
