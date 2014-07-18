@@ -26,11 +26,12 @@ module Autoparts
         <<-EOS.unindent
           export GOROOT=#{prefix_path}
           export GOPATH=#{go_packages}
+          export PATH=$PATH:$GOPATH/bin
         EOS
       end
 
       def go_packages
-        prefix_path + 'gopath'
+        Path.home + 'workspace'
       end
 
       def post_install
