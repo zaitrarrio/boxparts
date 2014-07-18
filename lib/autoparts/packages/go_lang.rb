@@ -35,14 +35,6 @@ module Autoparts
         Path.home + 'workspace'
       end
 
-      def post_install
-        File.write(env_file, env_content)
-      end
-
-      def post_uninstall
-        env_file.unlink if env_file.exist?
-      end
-
       def tips
         <<-EOS.unindent
 
