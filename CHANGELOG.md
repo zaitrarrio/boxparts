@@ -2,6 +2,15 @@ Changelog:
 
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
+
+###July 17th, 2014
+- **Fixed**:
+  - go installation issues (thanks @mikeroosa)
+  - elasticbeanstalk package updated
+- **Improvement**
+	- ghc updated to 7.8.3
+  
+  
 ###July 14th, 2014
 - **Additions**: 
   - enchant
