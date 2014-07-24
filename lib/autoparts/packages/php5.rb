@@ -5,17 +5,17 @@ module Autoparts
   module Packages
     class Php5 < Package
       name 'php5'
-      version '5.5.10-2'
+      version '5.5.15'
       description 'PHP 5.5: A popular general-purpose scripting language that is especially suited to web development. Prebuild extensions default + mbstring, mysql, sqlite3 and openssl'
-      source_url 'http://ru2.php.net/get/php-5.5.10.tar.gz/from/this/mirror'
-      source_sha1 'fa13e3634373791a8cb427d43ab4dcf9fcb3e526'
+      source_url 'http://uk3.php.net/get/php-5.5.15.tar.gz/from/this/mirror'
+      source_sha1 'd9df11b97a9f1c686194e91165602f47e3bd74e6'
       source_filetype 'tar.gz'
       category Category::WEB_DEVELOPMENT
 
       depends_on 'libmcrypt'
 
       def compile
-        Dir.chdir("php-5.5.10") do
+        Dir.chdir("php-5.5.15") do
           args = [
             "--with-mcrypt=#{get_dependency("libmcrypt").prefix_path}",
             # path
@@ -48,7 +48,7 @@ module Autoparts
       end
 
       def install
-        Dir.chdir("php-5.5.10") do
+        Dir.chdir("php-5.5.15") do
           execute 'make install'
           execute 'cp', 'php.ini-development', "#{lib_path}/php.ini"
         end
