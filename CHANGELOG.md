@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###July 23rd, 2014
+- **Improvement**
+	- composer updated to 1.0.0-20140724
+
 ###July 17th, 2014
 - **Fixed**:
   - go installation issues (thanks @mikeroosa)
