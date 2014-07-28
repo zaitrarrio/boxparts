@@ -25,7 +25,7 @@ See `parts help`.
 * Data files (e.g. database files) should be placed in `Path.var + name`
   (e.g. `~/.parts/var/postgresql`).
 * Log files should be placed in `Path.var + 'log' + "#{name}.log"` (e.g.
-  `~/.parts/var/log/postgresql.log`).
+  `~/.parts/var/log/postgresql.log`)
 
 
 ### Develop and Test packages
