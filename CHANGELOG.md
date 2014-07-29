@@ -4,6 +4,8 @@ Changelog:
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
 ###July 29th, 2014
+- **Additions**
+	- php5-sockets
 - **Improvement**
 	- php (and associated packages) updated to 5.5.15 (thanks @Garbee)
 
