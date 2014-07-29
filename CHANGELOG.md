@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###July 29th, 2014
+- **Improvement**
+	- php (and associated packages) updated to 5.5.15 (thanks @Garbee)
+
 ###July 23rd, 2014
 - **Improvement**
 	- composer updated to 1.0.0-20140724
