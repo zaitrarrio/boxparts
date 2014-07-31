@@ -29,7 +29,7 @@ module Autoparts
       end
       
       def pre_compile
-				execute 'sed', '-i', "1096 c\\        sqlite_inc_paths = [ '/usr/include', '#{Path.include}', ", 'setup.py'
+		execute 'sed', '-i', "1096 c\\        sqlite_inc_paths = [ '/usr/include', '#{Path.include}', ", 'setup.py'
       end
       
       def install

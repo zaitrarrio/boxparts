@@ -8,7 +8,7 @@ module Autoparts
   module Packages
     class Python3 < Python2
       name 'python3'
-      version '3.4.1'
+      version '3.4.1-1'
       description 'Python 3: Next generation of the most friendly Programming Language'
       source_url 'https://www.python.org/ftp/python/3.4.1/Python-3.4.1.tgz'
       source_sha1 'e8c1bd575a6ccc2a75f79d9d094a6a29d3802f5d'
@@ -20,12 +20,16 @@ module Autoparts
       end
       
       def pre_compile
-				execute 'sed', '-i', "1047 c\\        sqlite_inc_paths = [ '/usr/include', '#{Path.include}', ", 'setup.py'
+		execute 'sed', '-i', "1047 c\\        sqlite_inc_paths = [ '/usr/include', '#{Path.include}', ", 'setup.py'
       end
       
-     def python_version
+      def python_version
         "Python-3.4.1"
-      end      
+      end    
+        
+      def pre_archive
+          # do not remove pip and other tools
+      end
     end
   end
 end
