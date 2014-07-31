@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###July 31st, 2014
+- **Improvement**
+	-	python3 updated to 3.4.1-1
+
 ###July 29th, 2014
 - **Additions**
 	- php5-sockets
