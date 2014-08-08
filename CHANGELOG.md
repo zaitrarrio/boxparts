@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###August 8th, 2014
+- **Improvement**
+	-	meteor updated to 0.8.3
+
 ###August 6th, 2014
 - **Improvement**
 	-	grails updated to 2.4.3
