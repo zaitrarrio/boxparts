@@ -6,10 +6,10 @@ module Autoparts
   module Packages
     class Python2 < Package
       name 'python2'
-      version '2.7.6-2'
+      version '2.7.8'
       description 'Python 2: The most friendly Programming Language'
-      source_url 'http://www.python.org/ftp/python/2.7.6/Python-2.7.6.tgz'
-      source_sha1 '8328d9f1d55574a287df384f4931a3942f03da64'
+      source_url 'http://www.python.org/ftp/python/2.7.8/Python-2.7.8.tgz'
+      source_sha1 '511960dd78451a06c9df76509635aeec05b2051a'
       source_filetype 'tgz'
       category Category::PROGRAMMING_LANGUAGES
 
@@ -29,7 +29,7 @@ module Autoparts
       end
       
       def pre_compile
-		execute 'sed', '-i', "1096 c\\        sqlite_inc_paths = [ '/usr/include', '#{Path.include}', ", 'setup.py'
+		execute 'sed', '-i', "1098 c\\        sqlite_inc_paths = [ '/usr/include', '#{Path.include}', ", 'setup.py'
       end
       
       def install
@@ -39,7 +39,7 @@ module Autoparts
       end
 
       def python_version
-        "Python-2.7.6"
+        "Python-2.7.8"
       end
 
       def site_packages
