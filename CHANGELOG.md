@@ -3,6 +3,14 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###September 4th, 2014
+- **Improvement**
+	- python2 updated to 2.7.8
+- **Fixed**
+	- python3 support for sqlite3
+- **Additions**
+	- php5-phalcon (thanks @leob)
+
 ###August 8th, 2014
 - **Improvement**
 	-	meteor updated to 0.8.3
