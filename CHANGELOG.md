@@ -3,6 +3,12 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###September 8th, 2014
+- **Improvement**
+  - pip updated to 1.5.6
+  - setuptools updated to 5.7
+  - virtualenv updated to 1.11.6
+  
 ###September 4th, 2014
 - **Improvement**
 	- python2 updated to 2.7.8
