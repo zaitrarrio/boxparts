@@ -6,10 +6,10 @@ module Autoparts
   module Packages
     class Pip < Package
       name 'pip'
-      version '1.5.4-2'
+      version '1.5.6'
       description 'Pip: A tool for installing and managing Python packages'
-      source_url 'https://pypi.python.org/packages/source/p/pip/pip-1.5.4.tar.gz'
-      source_sha1 '35ccb7430356186cf253615b70f8ee580610f734'
+      source_url 'https://pypi.python.org/packages/source/p/pip/pip-1.5.6.tar.gz'
+      source_sha1 'e6cd9e6f2fd8d28c9976313632ef8aa8ac31249e'
       source_filetype 'tgz'
       category Category::DEVELOPMENT_TOOLS
 
@@ -17,7 +17,7 @@ module Autoparts
       depends_on "setuptools"
 
       def compile
-        Dir.chdir("pip-1.5.4") do
+        Dir.chdir("pip-1.5.6") do
           args = [
             "-s", "setup.py",
             "--no-user-cfg",
@@ -54,7 +54,7 @@ module Autoparts
       def required_files
         [
           "easy-install.pth",
-          "pip-1.5.4-py2.7.egg",
+          "pip-1.5.6-py2.7.egg",
         ]
       end
     end

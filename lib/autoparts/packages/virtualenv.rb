@@ -6,17 +6,17 @@ module Autoparts
   module Packages
     class Virtualenv < Package
       name 'virtualenv'
-      version '1.11.4-2'
+      version '1.11.6'
       description 'Virtualenv: Virtual Python Environment builder'
-      source_url 'https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.11.4.tar.gz'
-      source_sha1 '60b6a01091aa1a88366888ab16e31b9855221d9a'
+      source_url 'https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.11.6.tar.gz'
+      source_sha1 'd3f8e94bf825cc999924e276c8f1c63b8eeb0715'
       source_filetype 'tgz'
       category Category::DEVELOPMENT_TOOLS
 
       depends_on "python2"
 
       def compile
-        Dir.chdir("virtualenv-1.11.4") do
+        Dir.chdir("virtualenv-1.11.6") do
           args = [
             "-s", "setup.py",
             "--no-user-cfg",
