@@ -3,6 +3,14 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###September 9th, 2014
+- **Additions**
+  - haxe
+  - neko
+  - uuid
+- **Improvement**
+	- postgresql updated to 9.3.5
+
 ###September 8th, 2014
 - **Improvement**
   - pip updated to 1.5.6
