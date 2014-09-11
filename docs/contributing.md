@@ -35,7 +35,7 @@ Take a look at [docs/example-part.rb](https://github.com/codio/boxparts/tree/mas
 Follow this workflow to contribute an Box Parts package:
 
 1. Fork the [Box Parts repo](https://github.com/codio/boxparts) in GitHub.
-2. Create a new box in Nitrous.IO.
+2. Create a new box in Codio.
 3. cd to `~/.parts/autoparts`
 4. Add the fork repo as a a git remote: `git remote add myfork git@github.com:YOUR-USERNAME/boxparts.git`
 5. Create the new package file in `~/.parts/autoparts/lib/autoparts/packages/mypackage.rb`

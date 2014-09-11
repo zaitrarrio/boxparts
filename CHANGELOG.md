@@ -3,6 +3,15 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###September 11th, 2014
+- **Additions**
+  - freetds
+  - php_mssql
+  - php5_pdo_dblib
+- **Improvement**
+	- pip fix PATH export
+  - neko add export to LD_LIBRARY_PATH
+
 ###September 9th, 2014
 - **Additions**
   - haxe
