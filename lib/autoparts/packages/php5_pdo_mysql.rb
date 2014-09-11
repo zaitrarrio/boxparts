@@ -15,6 +15,7 @@ module Autoparts
       def php_extension_name
         'pdo_mysql'
       end
+      
       def php_compile_args
         [
           "--with-pdo-mysql=#{get_dependency("mysql").prefix_path}",
