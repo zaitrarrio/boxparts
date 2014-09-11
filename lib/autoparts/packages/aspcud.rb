@@ -22,9 +22,9 @@ module Autoparts
         args = [
           '-DCMAKE_BUILD_TYPE=Release',
           "-DCMAKE_INSTALL_PREFIX=#{prefix_path}",
-	        '-DCUDF2LP_LOC=cudf2lp',
-    	    '-DGRINGO_LOC=gringo',
-	        '-DCLASP_LOC=clasp',
+          '-DCUDF2LP_LOC=cudf2lp',
+          '-DGRINGO_LOC=gringo',
+          '-DCLASP_LOC=clasp',
           '../..',
         ]
 
