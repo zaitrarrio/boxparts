@@ -31,6 +31,12 @@ module Autoparts
         end
       end
 
+      def required_env
+        [
+          "export PATH=${PATH}:#{python_dependency.bin_path}",
+        ]
+      end
+      
       def install
         required_files.each do |f|
           execute "mv",

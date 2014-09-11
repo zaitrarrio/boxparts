@@ -35,8 +35,7 @@ module Autoparts
       def required_env
         [
           "export NEKOPATH=#{neko_libs}",
-          "LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:#{neko_libs}",
-
+          "export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:#{neko_libs}",
         ]
       end
       
