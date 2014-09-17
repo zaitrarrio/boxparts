@@ -2,12 +2,12 @@ module Autoparts
   module Packages
     class GoogleAppEngineJava < Package
       name 'googleappenginejava'
-      version '1.9.5'
+      version '1.9.11'
       description 'Google App Engine Java: A CLI for managing Google App Engine cloud services for Java'
       category Category::DEPLOYMENT
 
-      source_url 'https://storage.googleapis.com/appengine-sdks/featured/appengine-java-sdk-1.9.5.zip'
-      source_sha1 'b662c48b932c7c10fa634c25e64adc62f7c66ddf'
+      source_url 'https://storage.googleapis.com/appengine-sdks/featured/appengine-java-sdk-1.9.11.zip'
+      source_sha1 '3cb550e6a751584727ff123605549a5198b20b4f'
       source_filetype 'zip'
 
       def install
