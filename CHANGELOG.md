@@ -3,6 +3,12 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###September 17th, 2014
+- **Improvement**
+  - googleappengine updated to 1.9.11 
+  - googleappenginego updated to 1.9.11
+  - googleappenginejava updated to 1.9.11 (thanks for all @eMxyzptlk)
+
 ###September 11th, 2014
 - **Additions**
   - freetds
