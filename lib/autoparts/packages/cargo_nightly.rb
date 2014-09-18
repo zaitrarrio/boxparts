@@ -3,7 +3,7 @@
 
 module Autoparts
   module Packages
-    class RustNightly < Package
+    class CargoNightly < Package
       name 'cargo-nightly'
       version '0.0.1-pre-nightly-29e6a4f_2014-09-17'
       description 'Cargo build and dependency manager for Rust'
