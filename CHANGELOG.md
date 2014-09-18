@@ -3,6 +3,13 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###September 18th, 2014
+- **Additions**
+  - cargo-nightly (thanks @adamreid)
+ - **Improvement**
+	- meteor updated to 0.9.2.1
+  - rust-nightly updated to 0.12.0-pre-nightly-0e784e168_2014-09-16 (thanks @adamreid)
+  
 ###September 17th, 2014
 - **Improvement**
   - googleappengine updated to 1.9.11 
