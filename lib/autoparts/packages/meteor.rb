@@ -5,13 +5,13 @@ module Autoparts
   module Packages
     class Meteor < Package
       name 'meteor'
-      version '0.8.3'
+      version '0.9.2.1'
       description 'Meteor: A real-time web development platform'
-      source_url 'https://warehouse.meteor.com/bootstrap/0.8.3/meteor-bootstrap-Linux_x86_64.tar.gz'
-      source_sha1 '7c75aa06d42f13cf3c4f7cd61b65b05a8286644c'
-      source_filetype 'tar.gz'
-      category Category::DEPLOYMENT
+      category Category::WEB_DEVELOPMENT
 
+      source_url 'https://d3sqy0vbqsdhku.cloudfront.net/packages-bootstrap/0.9.2.1/meteor-bootstrap-os.linux.x86_64.tar.gz'
+      source_sha1 'e2ffaa25485a255c0fbe7a02b7027e3baa10ac12'
+      source_filetype 'tar.gz'
 
       def install
         prefix_path.parent.mkpath
@@ -49,6 +49,13 @@ module Autoparts
 
           exec "#{prefix_path}/meteor" "$@"
         EOF
+      end
+
+      def tips
+        <<-EOS.unindent
+          Note: When running a Meteor app you will need to specify the host to use 0.0.0.0:
+            $ meteor -p 0.0.0.0:3000
+        EOS
       end
     end
   end
