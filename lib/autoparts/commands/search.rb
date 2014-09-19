@@ -40,6 +40,7 @@ module Autoparts
           # json mode outputs the list as a JSON formatted output.
           if options.include?('--json')
             puts JSON.generate list.values
+            return
           else
             return if list.empty?
           end
