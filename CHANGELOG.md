@@ -3,6 +3,10 @@ Changelog:
 
 This page contains a list of recent updates made to the Codio BoxParts. For a full list of all parts see [Box Parts](https://codio.com/s/docs/boxes/box-parts/) 
 
+###September 24th, 2014
+- **Additions**
+  - gitftp
+  
 ###September 18th, 2014
 - **Additions**
   - cargo-nightly (thanks @adamreid)

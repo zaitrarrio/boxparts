@@ -48,7 +48,9 @@ At this point, your new Box Part will only work on this Codio project and will n
 In order to publish it, you will need to push the repo back to GitHub and send us a [pull request](https://help.github.com/articles/creating-a-pull-request).
 
 #Codio Steps
-Once your new Box Part has been checked and approved by Codio. We perform these checks as it us important to us that the quality of the Box Parts library is maintained at a high level and to examine them for potential security issues. Once approved,
+Your new Box Part will be checked and approved by Codio. 
+
+We perform these checks as it us important to us that the quality of the Box Parts library is maintained at a high level and to examine them for potential security issues. Once approved,
 
 1. We will compile your Box Part
 1. We upload the binary to the Codio Box Parts binary store.
@@ -119,7 +121,7 @@ Please note the following aspects of the name
 The version of the component that you are installing
 
 #description
-A brief description of the Box Part. Make it just long enought to be meaningful when displayed in the parts listing.
+A brief description of the Box Part. Make it just long enough to be meaningful when displayed in the parts listing.
 
 #category
 A constant that associates this Box Part with a component category. [Click here](open_file lib/autoparts/category.rb) to view the `lib/autoparts/category.rb` file where these constants are defined.
@@ -312,7 +314,7 @@ layout: ""
 The Post Installation step is called once the full installation is completed and carries out tasks such as installing a default database or modifying configuration files.
 
 #Where to put your config files
-Once your installation is complete, you should
+Once your installation is complete, 
 
 - Configuration files should be placed in `Path.etc` (e.g. `~/.parts/etc`) or `Path.etc + name` (e.g. `~/.parts/etc/postgresql`).
 - Data files (e.g. database files) should be placed in `Path.var + name` (e.g. `~/.parts/var/postgresql`).
